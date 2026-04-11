@@ -10,9 +10,13 @@ folder contains a `README.md` with a short explanation and practical examples.
 ### History and inspection
 - [reflog](./reflog) — recover "lost" commits and branches
 - [log-filters](./log-filters) — filter `git log` by author, date, message or file
+- [blame](./blame) — discover who changed each line and when
+- [diff](./diff) — compare changes between files, commits and branches
 
 ### Changing history
 - [revert](./revert) — undo changes by creating an inverse commit
+- [rebase](./rebase) — replay commits on top of another base (includes interactive rebase)
+- [cherry-pick](./cherry-pick) — apply specific commits from another branch
 
 ### Branching and collaboration
 - [branch-merge](./branch-merge) — create branches and push them to the remote
@@ -20,7 +24,3 @@ folder contains a `README.md` with a short explanation and practical examples.
 
 ### Releases
 - [tag](./tag) — create tags and publish release versions
-
-## Ideas
-
-See [add.md](./add.md) for a list of topics still to be added.
