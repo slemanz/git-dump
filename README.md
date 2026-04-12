@@ -18,8 +18,12 @@ folder contains a `README.md` with a short explanation and practical examples.
 - [rebase](./rebase) — replay commits on top of another base (includes interactive rebase)
 - [cherry-pick](./cherry-pick) — apply specific commits from another branch
 
+### Working directory
+- [stash](./stash) — save uncommitted changes temporarily
+- [clean](./clean) — remove untracked and ignored files
+
 ### Branching and collaboration
-- [branch-merge](./branch-merge) — create branches and push them to the remote
+- [branch-merge](./branch-merge) — create branches, merge and manage conflicts
 - [submodule](./submodule) — work with repositories inside repositories
 
 ### Releases
