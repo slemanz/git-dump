@@ -36,3 +36,33 @@ update the message if needed.
 git add forgotten-file.c
 git commit --amend --no-edit
 ```
+
+## Changing the author
+
+5. Fix the author of the last commit:
+
+```bash
+git commit --amend --author="Name <email@example.com>"
+```
+
+## After pushing
+
+6. If the original commit was already pushed, you need to force push:
+
+```bash
+git push --force-with-lease
+```
+
+Use `--force-with-lease` instead of `--force` — it checks that no one else
+pushed new commits to the branch, preventing you from overwriting their work.
+
+**Important:**
+
+- **Never amend commits that are shared with others** (e.g. already merged into
+`main`). It rewrites history and will cause problems for everyone.
+
+- **Amend only replaces the last commit.** To modify older commits, use
+`git rebase -i` instead.
+
+- **The original commit still exists** in the reflog for a while, so you can
+recover it if something goes wrong: `git reflog`
