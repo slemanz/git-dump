@@ -17,6 +17,8 @@ folder contains a `README.md` with a short explanation and practical examples.
 - [revert](./revert) — undo changes by creating an inverse commit
 - [rebase](./rebase) — replay commits on top of another base (includes interactive rebase)
 - [cherry-pick](./cherry-pick) — apply specific commits from another branch
+- [amend](./amend) — modify the most recent commit (message, files or author)
+- [reset](./reset) — move HEAD and undo commits with `--soft`, `--mixed` or `--hard`
 
 ### Working directory
 - [stash](./stash) — save uncommitted changes temporarily
